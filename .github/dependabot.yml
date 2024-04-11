@@ -1,0 +1,27 @@
+version: 2
+updates:
+
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "gradle"
+    directory: "/carparts-inline"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "gradle"
+    directory: "/carparts-manager"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "gradle"
+    directory: "/carparts-null-play"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "gradle"
+    directory: "/carparts-tairec"
+    schedule:
+      interval: "daily"
