@@ -11,7 +11,7 @@ This repo is a list of examples in Kotlin that escape the norm. This is your gui
    2. Reflection to force nulls - [carparts-null-play](carparts-null-play)
 2. inline and cross-inline - [carparts-inline](carparts-inline)
    1. The Java overview
-3. Tail recursivity - [carparts-tairec](carparts-tairec)
+3. Tail recursive => Tail Cal Optimization (TCO) - [carparts-tairec](carparts-tairec)
    1. What is it
    2. Why?
    3. How it makes us work recursively and not use mutable
