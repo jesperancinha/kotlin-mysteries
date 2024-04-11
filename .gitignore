@@ -33,3 +33,5 @@ bin
 target
 .angular
 .cache
+.gradle
+wrapper
