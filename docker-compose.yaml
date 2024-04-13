@@ -1,0 +1,12 @@
+services:
+  car-part-database:
+    hostname: postgres
+    build:
+      context: carparts-database-service/.
+    expose:
+      - "5432"
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "${DB_USER}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5

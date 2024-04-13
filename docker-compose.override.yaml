@@ -1,0 +1,4 @@
+services:
+  car-part-database:
+    ports:
+      - 5432:5432

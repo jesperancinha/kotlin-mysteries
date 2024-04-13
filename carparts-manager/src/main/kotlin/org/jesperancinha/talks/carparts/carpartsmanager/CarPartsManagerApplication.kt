@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CarpartsManagerApplication
+class CarPartsManagerApplication
 
 fun main(args: Array<String>) {
-	runApplication<CarpartsManagerApplication>(*args)
+	runApplication<CarPartsManagerApplication>(*args)
 }

@@ -7,3 +7,9 @@ wrap:
 	gradle wrapper
 build: clean
 	gradle build
+dcup:
+	docker-compose up -d
+dcup-action:
+	docker-compose -f docker-compose.yaml up -d
+dcd:
+	docker-compose down

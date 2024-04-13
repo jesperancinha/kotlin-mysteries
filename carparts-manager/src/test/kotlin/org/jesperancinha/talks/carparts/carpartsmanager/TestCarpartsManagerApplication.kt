@@ -20,5 +20,5 @@ class TestCarpartsManagerApplication {
 }
 
 fun main(args: Array<String>) {
-	fromApplication<CarpartsManagerApplication>().with(TestCarpartsManagerApplication::class).run(*args)
+	fromApplication<CarPartsManagerApplication>().with(TestCarpartsManagerApplication::class).run(*args)
 }
