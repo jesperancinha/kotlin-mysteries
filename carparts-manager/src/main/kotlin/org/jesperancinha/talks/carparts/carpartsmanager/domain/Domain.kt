@@ -8,7 +8,7 @@ import java.math.BigDecimal
 import java.time.Instant
 
 
-@Table
+@Table(name = "CAR_PARTS")
 @Entity
 data class CarPart(
     @Id
