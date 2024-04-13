@@ -3,7 +3,7 @@ package org.jesperancinha.talks.carparts.carpartsmanager.converter
 import org.jesperancinha.talks.carparts.carpartsmanager.domain.CarPart
 import org.jesperancinha.talks.carparts.carpartsmanager.dto.CarPartDto
 
-fun CarPart.toTo() = CarPartDto(
+fun CarPart.toDto() = CarPartDto(
     id = id,
     name = name,
     productionDate = productionDate,
