@@ -44,3 +44,7 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+//For Intellij
+tasks.register("prepareKotlinBuildScriptModel"){}
+
