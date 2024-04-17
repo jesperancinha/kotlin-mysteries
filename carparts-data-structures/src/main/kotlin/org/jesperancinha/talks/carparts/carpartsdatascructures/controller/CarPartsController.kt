@@ -1,7 +1,7 @@
-package org.jesperancinha.talks.carparts.carpartsmanager.constroller
+package org.jesperancinha.talks.carparts.carpartsdatascructures.controller
 
-import org.jesperancinha.talks.carparts.carpartsmanager.dto.CarPartDto
-import org.jesperancinha.talks.carparts.carpartsmanager.service.CarPartsService
+import org.jesperancinha.talks.carparts.carpartsdatascructures.dto.CarPartDto
+import org.jesperancinha.talks.carparts.carpartsdatascructures.service.CarPartsService
 import org.springframework.web.bind.annotation.*
 
 
