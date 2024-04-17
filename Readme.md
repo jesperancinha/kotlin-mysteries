@@ -19,6 +19,6 @@ This repo is a list of examples in Kotlin that escape the norm. This is your gui
    1. Why things work and why things don't work
    2. How to fix the ones that don't
    3. How to work with use-site targets.
-5. What does a `delegate` do? and other use-site targets.
+5. What does a `delegate` do? and other use-site targets. - [carparts-use-site-targts](carparts-use-site-targts)
 
 > Under Construction - Stay tuned to this repo for more.
