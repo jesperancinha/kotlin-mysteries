@@ -9,5 +9,4 @@ class CarPartsDataStructureApplicationTests : ContainerTest() {
     @Test
     fun contextLoads() {
     }
-
 }
