@@ -17,11 +17,10 @@ fun main() {
         println("Turn key or press pus button ignition")
         println("Clutch to the floor")
         println("Set the first gear")
-        true
     }.run { println(this) }
 }
 
-inline fun callEngineCrossInline(crossinline startManually: () -> Boolean): Boolean {
+inline fun callEngineCrossInline(crossinline startManually: () -> Unit) {
     run loop@{
         for (i in 1..100) {
             (1..10).forEach { subI ->
@@ -30,21 +29,27 @@ inline fun callEngineCrossInline(crossinline startManually: () -> Boolean): Bool
             }
         }
     }
-    val introductionResult = run loop@{
-        val test = introduction {
+    run loop@{
+        println("This is the start of the loop.")
+        introduction {
             println("Get computer in the backseat")
-            return@introduction startManually()
+            startManually()
+            return@introduction
         }
-        test
+        println("This is the end of the loop.")
+    }
+
+
+    introduction {
+        startManually()
     }
     println("Engine started!")
-    return introductionResult
 }
 
-inline fun introduction(intro: () -> Boolean): Boolean {
+fun introduction(intro: () -> Unit) {
     println(LocalDateTime.now())
     intro()
-    return true
+    return
 }
 
 fun callEngine() {
