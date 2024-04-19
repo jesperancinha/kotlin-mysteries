@@ -13,8 +13,12 @@
 
 ## Swagger location
 
-- [http://localhost:8080/api/v1/carparts/swagger-ui/index.html](http://localhost:8080/api/v1/carparts/swagger-ui/index.html)
+-   [http://localhost:8080/api/v1/carparts/swagger-ui/index.html](http://localhost:8080/api/v1/carparts/swagger-ui/index.html)
 
 ## Resources
 
-- [Annotation use-site targets @ Kotlin Lang](https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets)
+-   [Annotation use-site targets @ Kotlin Lang](https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets)
+
+## About me
+
+[![GitHub followers](https://img.shields.io/github/followers/jesperancinha.svg?label=Jesperancinha&style=for-the-badge&logo=github&color=grey "GitHub")](https://github.com/jesperancinha)
