@@ -1,3 +1,9 @@
 # Kotlin Mysteries - Inline
 
-TODO()
+## Questions
+
+1. What is the Java overview
+
+## Examples
+
+* [carparts-inline](carparts-inline)
