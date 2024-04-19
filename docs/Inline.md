@@ -6,4 +6,4 @@
 
 ## Examples
 
-* [carparts-inline](carparts-inline)
+* [carparts-inline](https://github.com/jesperancinha/kotlin-mysteries/tree/main/carparts-inline)

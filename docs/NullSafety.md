@@ -7,5 +7,5 @@
 
 ## Examples
 
-* [carparts-manager](carparts-manager)
-* [carparts-null-play](carparts-null-play)
+* [carparts-manager](https://github.com/jesperancinha/kotlin-mysteries/tree/main/carparts-manager)
+* [carparts-null-play](https://github.com/jesperancinha/kotlin-mysteries/tree/main/carparts-null-play)

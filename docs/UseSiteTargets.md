@@ -8,4 +8,4 @@
 
 ## Examples
 
-* [carparts-data-structures](carparts-data-structures)
+* [carparts-data-structures](https://github.com/jesperancinha/kotlin-mysteries/tree/main/carparts-data-structures)

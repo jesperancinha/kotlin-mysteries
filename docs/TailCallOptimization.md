@@ -8,5 +8,5 @@
 
 ## Examples
 
-* [carparts-tairec](carparts-tairec)
+* [carparts-tairec](https://github.com/jesperancinha/kotlin-mysteries/tree/main/carparts-tairec)
 
