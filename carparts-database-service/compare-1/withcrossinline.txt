@@ -1,0 +1,71 @@
+package org.jesperancinha.talks.carparts;
+
+import java.time.LocalDateTime;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(
+   mv = {1, 9, 0},
+   k = 2,
+   d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a\u001c\u0010\u0000\u001a\u00020\u00012\u000e\b\u0004\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\u0086\bø\u0001\u0000\u001a\u001a\u0010\u0004\u001a\u00020\u00012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\u0086\bø\u0001\u0000\u001a\u0006\u0010\u0006\u001a\u00020\u0001\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\u0007"},
+   d2 = {"callEngineCrossInline", "", "startManually", "Lkotlin/Function0;", "introduction", "intro", "main", "carparts-inline"}
+)
+@SourceDebugExtension({"SMAP\nMain.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Main.kt\norg/jesperancinha/talks/carparts/MainKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,33:1\n16#1,3:34\n29#1,2:37\n19#1,3:39\n29#1,2:43\n1#2:42\n*S KotlinDebug\n*F\n+ 1 Main.kt\norg/jesperancinha/talks/carparts/MainKt\n*L\n7#1:34,3\n7#1:37,2\n7#1:39,3\n18#1:43,2\n*E\n"})
+public final class MainKt {
+   public static final void main() {
+      int $i$f$callEngineCrossInline = false;
+      int var1 = false;
+      String var2 = "This is the start of the loop.";
+      System.out.println(var2);
+      int $i$f$introduction = false;
+      LocalDateTime var3 = LocalDateTime.now();
+      System.out.println(var3);
+      int var4 = false;
+      String var5 = "Get computer in the backseat";
+      System.out.println(var5);
+      int var6 = false;
+      String var7 = "Place key in ignition";
+      System.out.println(var7);
+      var7 = "Turn key or press pus button ignition";
+      System.out.println(var7);
+      var7 = "Clutch to the floor";
+      System.out.println(var7);
+      var7 = "Set the first gear";
+      System.out.println(var7);
+      Unit var8 = Unit.INSTANCE;
+      $i$f$introduction = false;
+      System.out.println(var8);
+   }
+
+   // $FF: synthetic method
+   public static void main(String[] var0) {
+      main();
+   }
+
+   public static final void callEngineCrossInline(@NotNull Function0 startManually) {
+      int $i$f$callEngineCrossInline = 0;
+      Intrinsics.checkNotNullParameter(startManually, "startManually");
+      int var2 = false;
+      String var3 = "This is the start of the loop.";
+      System.out.println(var3);
+      int $i$f$introduction = false;
+      LocalDateTime var4 = LocalDateTime.now();
+      System.out.println(var4);
+      int var5 = false;
+      String var6 = "Get computer in the backseat";
+      System.out.println(var6);
+      startManually.invoke();
+   }
+
+   public static final void introduction(@NotNull Function0 intro) {
+      int $i$f$introduction = 0;
+      Intrinsics.checkNotNullParameter(intro, "intro");
+      LocalDateTime var2 = LocalDateTime.now();
+      System.out.println(var2);
+      intro.invoke();
+   }
+}
