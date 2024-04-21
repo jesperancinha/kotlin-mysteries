@@ -2,33 +2,35 @@ package org.jesperancinha.talks.inline
 
 object SpecialShopNonLocalReturn {
 
-    inline fun someFunction(block: () -> Unit) {
-        block()
+    inline fun goToStore(chooseItems: () -> Unit) {
+        println("Walks in")
+        chooseItems()
     }
 
     @JvmStatic
     fun main(args: Array<String> = emptyArray()) {
-        someFunction {
-            println("Inside lambda")
+        goToStore {
+            println("Make purchase")
             return@main
         }
-        println("This line will not be reached!")
+        println("Never walks out")
     }
 }
 
 
 object SpecialShopLocalReturn {
-    inline fun someFunction(crossinline block: () -> Unit) {
+    inline fun goToStore(crossinline block: () -> Unit) {
+        println("Walks in")
         block()
     }
 
     @JvmStatic
     fun main(args: Array<String> = emptyArray()) {
-        someFunction {
-            println("Inside lambda")
-            return@someFunction
+        goToStore {
+            println("Make purchase")
+            return@goToStore
         }
-        println("This line will be reached")
+        println("Walks out")
     }
 }
 
