@@ -18,19 +18,19 @@ class WagonHorn : Horn {
     }
 }
 
-annotation class DelegateToCat
+annotation class DelegateToWagonHorn
 
-annotation class DelegateToDog
+annotation class DelegateToCarHorn
 
-class Animal {
-    @delegate:DelegateToCat
-    val wagonHorn: Horn by AnimalSoundDelegate(CarHorn())
+class HornPack {
+    @delegate:DelegateToWagonHorn
+    val wagonHorn: Horn by SoundDelegate(CarHorn())
 
-    @delegate:DelegateToDog
-    val carHorn: Horn by AnimalSoundDelegate(WagonHorn())
+    @delegate:DelegateToCarHorn
+    val carHorn: Horn by SoundDelegate(WagonHorn())
 }
 
-class AnimalSoundDelegate(private val initialHorn: Horn) {
+class SoundDelegate(private val initialHorn: Horn) {
     operator fun getValue(thisRef: Any?, property: KProperty<*>): Horn {
         return initialHorn
     }

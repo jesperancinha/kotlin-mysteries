@@ -30,7 +30,7 @@ public final class MainKt {
       int var6 = false;
       String var7 = "Place key in ignition";
       System.out.println(var7);
-      var7 = "Turn key or press pus button ignition";
+      var7 = "Turn key or press push button ignition";
       System.out.println(var7);
       var7 = "Clutch to the floor";
       System.out.println(var7);

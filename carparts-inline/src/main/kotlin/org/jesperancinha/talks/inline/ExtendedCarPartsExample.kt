@@ -15,7 +15,7 @@ object ExtendedCarPartsExample {
         }
         callEngineCrossInline {
             println("Place key in ignition")
-            println("Turn key or press pus button ignition")
+            println("Turn key or press push button ignition")
             println("Clutch to the floor")
             println("Set the first gear")
         }.run { println(this) }
