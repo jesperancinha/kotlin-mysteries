@@ -1,5 +1,7 @@
 package org.jesperancinha.talks.carparts.carpartsdatascructures.controller
 
+import ImpossiblePartNameDto
+import PartNameDto
 import jakarta.validation.Valid
 import org.jesperancinha.talks.carparts.carpartsdatascructures.dto.CarPartDto
 import org.jesperancinha.talks.carparts.carpartsdatascructures.service.CarPartsService
@@ -19,4 +21,14 @@ class CarPartsController(
 
     @GetMapping
     fun getCarParts() = carPartsService.getCarParts()
+
+    @PostMapping("name")
+    fun createName(@RequestBody @Valid partNameDto: PartNameDto){
+        println(partNameDto)
+    }
+
+    @PostMapping("impossible")
+    fun createImpossibleName(@RequestBody @Valid partNameDto: ImpossiblePartNameDto){
+        println(partNameDto)
+    }
 }
