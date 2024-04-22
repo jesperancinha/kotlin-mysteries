@@ -30,7 +30,7 @@ class LocalDateTimeValidator : ConstraintValidator<LocalDateTimeValidatorConstra
 
     override fun isValid(value: LocalDateTimeDelegate, context: ConstraintValidatorContext): Boolean {
         return when(Locale.getDefault().country ){
-            "EU","US" -> true
+            "NL","US" -> true
             else -> false
         }
     }

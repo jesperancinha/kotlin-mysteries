@@ -22,6 +22,12 @@ annotation class DelegateToWagonHorn
 
 annotation class DelegateToCarHorn
 
+class SoundDelegate(private val initialHorn: Horn) {
+    operator fun getValue(thisRef: Any?, property: KProperty<*>): Horn {
+        return initialHorn
+    }
+}
+
 class HornPack {
     @delegate:DelegateToWagonHorn
     val wagonHorn: Horn by SoundDelegate(CarHorn())
@@ -29,10 +35,3 @@ class HornPack {
     @delegate:DelegateToCarHorn
     val carHorn: Horn by SoundDelegate(WagonHorn())
 }
-
-class SoundDelegate(private val initialHorn: Horn) {
-    operator fun getValue(thisRef: Any?, property: KProperty<*>): Horn {
-        return initialHorn
-    }
-}
-
