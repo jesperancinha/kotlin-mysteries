@@ -5,6 +5,8 @@ import PartNameDto
 import jakarta.validation.Valid
 import org.jesperancinha.talks.carparts.carpartsdatascructures.dto.CarPartDto
 import org.jesperancinha.talks.carparts.carpartsdatascructures.service.CarPartsService
+import org.jesperancinha.talks.carparts.org.jesperancinha.talks.carparts.carpartsdatascructures.converter.CustomValidators.logger
+import org.jesperancinha.talks.carparts.org.jesperancinha.talks.carparts.carpartsdatascructures.service.DelegationService
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.web.bind.annotation.*
 
@@ -14,7 +16,7 @@ import org.springframework.web.bind.annotation.*
 class CarPartsController(
     val carPartsService: CarPartsService,
     @field:Qualifier("carPartServiceExtended")
-    val carPartServiceExtended: CarPartsService
+    val carPartServiceExtended: CarPartsService,
 ) {
     @PostMapping("create")
     fun createCarPart(@RequestBody @Valid carPartDto: CarPartDto) = carPartsService.createCarPart(carPartDto)
@@ -26,7 +28,13 @@ class CarPartsController(
     fun getCarParts() = carPartServiceExtended.getCarParts()
 
     @PostMapping("create/extended")
-    fun createCarPartExtended(@RequestBody @Valid carPartDto: CarPartDto) = carPartServiceExtended.createCarPart(carPartDto)
+    fun createCarPartExtended(
+        @RequestBody @Valid carPartDto: CarPartDto,
+        @Valid delegationService: DelegationService,
+    ) = carPartServiceExtended.createCarPart(carPartDto)
+        .also {
+            logger.info("{}", delegationService.currentDate)
+        }
 
     @PutMapping("upsert/extended")
     fun upsertExtended(@RequestBody @Valid carPartDto: CarPartDto) = carPartServiceExtended.upsertCarPart(carPartDto)
@@ -35,12 +43,12 @@ class CarPartsController(
     fun getCarPartsExtended() = carPartServiceExtended.getCarParts()
 
     @PostMapping("name")
-    fun createName(@RequestBody @Valid partNameDto: PartNameDto){
+    fun createName(@RequestBody @Valid partNameDto: PartNameDto) {
         println(partNameDto)
     }
 
     @PostMapping("impossible")
-    fun createImpossibleName(@RequestBody @Valid partNameDto: ImpossiblePartNameDto){
+    fun createImpossibleName(@RequestBody @Valid partNameDto: ImpossiblePartNameDto) {
         println(partNameDto)
     }
 }
