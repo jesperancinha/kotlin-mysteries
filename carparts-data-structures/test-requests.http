@@ -1,0 +1,31 @@
+ ###
+POST http://localhost:8080/api/v1/carparts/name
+Content-Type: application/json
+
+{
+   "name": "ignition"
+}
+
+###
+POST http://localhost:8080/api/v1/carparts/name
+Content-Type: application/json
+
+{
+   "name": "ignition for the ignition for the ignition"
+}
+
+###
+POST http://localhost:8080/api/v1/carparts/impossible
+Content-Type: application/json
+
+{
+   "name": "ignition"
+}
+
+###
+POST http://localhost:8080/api/v1/carparts/impossible
+Content-Type: application/json
+
+{
+   "name": "ignition for the ignition for the ignition"
+}
