@@ -20,7 +20,7 @@ This repo is a list of examples in Kotlin that escape the norm. This is your gui
     2.  How to fix the ones that don't
     3.  How to work with use-site targets.
 5.  What does a `delegate` do? and other use-site targets.
-    1.  Delegates - [carparts-use-site-targts](carparts-use-site-targts)
+    1.  Delegates - [carparts-use-site-targets](carparts-use-site-targets)
     2.  Delegates with Spring - [carparts-data-structures](carparts-data-structures)
 
 ## About me
