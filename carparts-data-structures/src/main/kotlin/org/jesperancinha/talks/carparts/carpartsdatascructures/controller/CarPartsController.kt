@@ -5,13 +5,16 @@ import PartNameDto
 import jakarta.validation.Valid
 import org.jesperancinha.talks.carparts.carpartsdatascructures.dto.CarPartDto
 import org.jesperancinha.talks.carparts.carpartsdatascructures.service.CarPartsService
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.web.bind.annotation.*
 
 
 @RestController
 @RequestMapping
 class CarPartsController(
-    val carPartsService: CarPartsService
+    val carPartsService: CarPartsService,
+    @field:Qualifier("carPartServiceExtended")
+    val carPartServiceExtended: CarPartsService
 ) {
     @PostMapping("create")
     fun createCarPart(@RequestBody @Valid carPartDto: CarPartDto) = carPartsService.createCarPart(carPartDto)
@@ -20,7 +23,16 @@ class CarPartsController(
     fun upsert(@RequestBody @Valid carPartDto: CarPartDto) = carPartsService.upsertCarPart(carPartDto)
 
     @GetMapping
-    fun getCarParts() = carPartsService.getCarParts()
+    fun getCarParts() = carPartServiceExtended.getCarParts()
+
+    @PostMapping("create/extended")
+    fun createCarPartExtended(@RequestBody @Valid carPartDto: CarPartDto) = carPartServiceExtended.createCarPart(carPartDto)
+
+    @PutMapping("upsert/extended")
+    fun upsertExtended(@RequestBody @Valid carPartDto: CarPartDto) = carPartServiceExtended.upsertCarPart(carPartDto)
+
+    @GetMapping("extended")
+    fun getCarPartsExtended() = carPartServiceExtended.getCarParts()
 
     @PostMapping("name")
     fun createName(@RequestBody @Valid partNameDto: PartNameDto){
