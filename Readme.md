@@ -15,7 +15,7 @@ This repo is a list of examples in Kotlin that escape the norm. This is your gui
     1.  What is it
     2.  Why?
     3.  How it makes us work recursively and not use mutable
-4.  Data classes vs Records vs Boiler Plate Tradition - [carparts-data-structures](carparts-data-structures)
+4.  Data classes - [carparts-data-structures](carparts-data-structures)
     1.  Why things work and why things don't work
     2.  How to fix the ones that don't
     3.  How to work with use-site targets.
