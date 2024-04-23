@@ -15,7 +15,9 @@ class DomainTest : ContainerTest() {
         // For illustration purposes only.
         // It DOES receive a null value.
         carPartDao.findAll()
-            .filter { it.name == null }
+            .filter {
+                it.name == null
+            }
             .shouldHaveSize(1)
     }
 }
