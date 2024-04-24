@@ -18,6 +18,7 @@
 ## Resources
 
 -   [Annotation use-site targets @ Kotlin Lang](https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets)
+-   [Spring Validation via AOP](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-validation.html)
 
 ## About me
 
