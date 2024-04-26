@@ -4,7 +4,7 @@ sealed interface Part {
     val totalWeight: Double
 }
 
-sealed interface ComplexPart  : Part{
+sealed interface ComplexPart  : Part {
     val parts: List<Part>
 }
 data class CarPart(val name: String, val weight: Double) : Part {
