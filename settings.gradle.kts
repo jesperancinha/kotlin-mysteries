@@ -5,6 +5,6 @@ rootProject.name = "kotlin-mysteries"
 include ("carparts-manager")
 include ("carparts-null-play")
 include("carparts-inline")
-include("carparts-tairec")
+include("carparts-tailrec")
 include("carparts-data-structures")
 include("carparts-use-site-targets")
