@@ -16,6 +16,12 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+/**
+ * Not necessary in all cases
+ */
+tasks.register("prepareKotlinBuildScriptModel"){}
+
 kotlin {
     jvmToolchain(17)
 }
