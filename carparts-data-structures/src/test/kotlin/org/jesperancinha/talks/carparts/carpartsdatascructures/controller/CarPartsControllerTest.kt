@@ -51,6 +51,26 @@ class CarPartsControllerTest @Autowired constructor(
     }
 
     @Test
+    fun `should send a valid request extended`() {
+        mockMvc.perform(
+            MockMvcRequestBuilders.post(
+                "/create/extended",
+
+                ).content(
+                objectMapper.writeValueAsString(
+                    CarPartDto(
+                        name = "Bolt",
+                        productionDate = Instant.now(),
+                        expiryDate = Instant.now(),
+                        barCode = 1001L,
+                        cost = BigDecimal.TEN
+                    )
+                )
+            ).contentType(MediaType.APPLICATION_JSON)
+        ).andExpect(MockMvcResultMatchers.status().isOk)
+    }
+
+    @Test
     fun `should detect invalid request to the controller`() {
         mockMvc.perform(
             MockMvcRequestBuilders.post(
