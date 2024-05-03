@@ -4,6 +4,12 @@
 
 This repo is a list of examples in Kotlin that escape the norm. This is your guide to the mysterious and different in Kotlin.
 
+## Releases
+
+| Version  - Git-Tag                                                            | Git Hash | Purpose |
+|-------------------------------------------------------------------------------|---|---|
+| [1.0.0](https://github.com/jesperancinha/kotlin-mysteries/tree/1.0.0) | [3d176b17596bc4fef7fb59c0ba8d49b7eb7c0268](https://github.com/jesperancinha/kotlin-mysteries/tree/3d176b17596bc4fef7fb59c0ba8d49b7eb7c0268) | [Decoding Kotlin - Your guide to solving the mysterious in Kotlin](https://joaofilipesabinoesperancinha.nl/blog/blog-24-mysteries-of-kotlin) |
+
 ## Topics
 
 1.  Nullability
