@@ -29,9 +29,15 @@ class LocalDateTimeValidator : ConstraintValidator<LocalDateTimeValidatorConstra
     }
 
     override fun isValid(value: LocalDateTimeDelegate, context: ConstraintValidatorContext): Boolean {
-        return when(Locale.getDefault().country ){
-            "NL","US" -> true
+        val country = Locale.getDefault().country.trim()
+        logger.info("Current country is {}", country)
+        return when (country) {
+            "", "NL", "US" -> true
             else -> false
         }
+    }
+
+    companion object {
+        val logger: Logger = getLogger<LocalDateTimeValidator>()
     }
 }
