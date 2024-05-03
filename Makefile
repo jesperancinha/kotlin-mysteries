@@ -9,7 +9,7 @@ list:
 wrap:
 	gradle wrapper
 build: clean
-	gradle build
+	gradle build -i
 dcup:
 	docker-compose up -d
 dcup-action:
