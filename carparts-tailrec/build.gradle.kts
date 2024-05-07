@@ -1,9 +1,9 @@
 plugins {
-    kotlin("jvm") version "1.9.23"
+    alias(libs.plugins.kotlin.jvm)
 }
 
 group = "org.jesperancinha.talks.carparts"
-version = "unspecified"
+version = "0.0.0"
 
 repositories {
     mavenCentral()
@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    testImplementation("io.kotest:kotest-assertions-core:5.8.1")
+    testImplementation(libs.kostest.assertions)
 }
 
 tasks.test {
