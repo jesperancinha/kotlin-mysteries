@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    testImplementation(libs.kostest.assertions)
+    testImplementation(libs.kotest.assertions)
 }
 
 tasks.test {

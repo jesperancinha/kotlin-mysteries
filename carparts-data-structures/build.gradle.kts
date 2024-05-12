@@ -25,7 +25,7 @@ dependencies {
     implementation(libs.jackson.datatype.jsr310)
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation(libs.kostest.assertions)
+    testImplementation(libs.kotest.assertions)
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:postgresql")
