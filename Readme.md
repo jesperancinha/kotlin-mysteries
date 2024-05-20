@@ -5,6 +5,8 @@
 
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 
+[![kotlin-mysteries Build](https://github.com/jesperancinha/kotlin-mysteries/actions/workflows/kotlin-mysteries.yml/badge.svg)](https://github.com/jesperancinha/kotlin-mysteries/actions/workflows/kotlin-mysteries.yml)
+
 [![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/kotlin-mysteries.svg)](#)
 [![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/kotlin-mysteries.svg)](#)
 [![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/kotlin-mysteries.svg)](#)
