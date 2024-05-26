@@ -15,7 +15,7 @@ class ContainerTest {
 
 		private val postgreSQLContainer
 				by lazy {
-					PostgreSQLContainer<Nothing>("postgres:latest")
+					PostgreSQLContainer<Nothing>("postgres:15")
 						.also { it.start() }
 				}
 
