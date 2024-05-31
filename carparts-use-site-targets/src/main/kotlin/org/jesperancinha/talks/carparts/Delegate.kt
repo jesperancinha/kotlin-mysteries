@@ -30,8 +30,8 @@ class SoundDelegate(private val initialHorn: Horn) {
 
 class HornPack {
     @delegate:DelegateToWagonHorn
-    val wagonHorn: Horn by SoundDelegate(CarHorn())
+    val wagonHorn: Horn by SoundDelegate(WagonHorn())
 
     @delegate:DelegateToCarHorn
-    val carHorn: Horn by SoundDelegate(WagonHorn())
+    val carHorn: Horn by SoundDelegate(CarHorn())
 }
