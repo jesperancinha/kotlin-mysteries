@@ -1,5 +1,7 @@
 package org.jesperancinha.talks.carparts
 
+import kotlin.system.measureTimeMillis
+
 sealed interface Part {
     val totalWeight: Double
 }
@@ -30,7 +32,7 @@ data class Car(
         get() = parts.sumOf { it.totalWeight }
 }
 
-tailrec fun totalWeight(parts: List<Part>, acc: Double = 0.0): Double {
+fun totalWeight(parts: List<Part>, acc: Double = 0.0): Double {
     if (parts.isEmpty()) {
         return acc
     }
@@ -47,8 +49,10 @@ fun main() {
     val cars =
         findAllCars()
 
-    val total = totalWeight(cars)
-    println("Total weight of ${cars.size} is $total kg")
+    println(measureTimeMillis {
+        val total = totalWeight(cars)
+        println("Total weight of ${cars.size} is $total kg")
+    })
 }
 
 fun findAllCars() = listOf(
