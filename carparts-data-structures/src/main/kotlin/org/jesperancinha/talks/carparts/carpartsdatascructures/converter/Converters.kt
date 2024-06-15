@@ -10,7 +10,7 @@ object Converters {
     val logger: Logger = getLogger<Converters>()
 }
 
-fun CarPart.toDto() = try {
+fun CarPart.toDto() =
     CarPartDto(
         id = id,
         name = name,
@@ -18,13 +18,7 @@ fun CarPart.toDto() = try {
         expiryDate = expiryDate,
         barCode = barCode,
         cost = cost
-    )
-} catch (ex: Exception) {
-    logger.error("Failed to convert data!", ex)
-    null
-} finally {
-    logger.info("Tried to convert data {}", this)
-}
+    ).also { logger.info("Tried to convert data {}", it) }
 
 fun CarPartDto.toEntity() = CarPart(
     id = id,

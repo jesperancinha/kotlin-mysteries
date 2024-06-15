@@ -24,6 +24,7 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
     implementation(libs.jackson.datatype.jsr310)
     runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly(libs.flyway.database.postgresql)
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation(libs.kotest.assertions)
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
