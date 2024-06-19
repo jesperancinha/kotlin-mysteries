@@ -37,3 +37,5 @@ upgrade-sdk-man:
 upgrade:
 	export CURRENT=$(shell pwd); \
 	gradle wrapper --gradle-version $(GRADLE_VERSION);
+deps-plugins-update:
+	curl -sL https://raw.githubusercontent.com/jesperancinha/project-signer/master/pluginUpdatesOne.sh | bash
