@@ -32,7 +32,7 @@ class LocalDateTimeValidator : ConstraintValidator<LocalDateTimeValidatorConstra
         val country = Locale.getDefault().country.trim()
         logger.info("Current country is {}", country)
         return when (country) {
-            "", "NL", "US" -> true
+            "", "NL", "US", "PT", "ES", "UK", "FR"-> true
             else -> false
         }
     }
