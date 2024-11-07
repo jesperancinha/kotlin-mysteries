@@ -15,3 +15,8 @@ updates:
       spring:
         patterns:
           - "*spring*"
+      flyway:
+        patterns:
+          - "*flyway*"
+          - "flyway*"
+          - "*flyway"
