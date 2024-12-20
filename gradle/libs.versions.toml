@@ -1,13 +1,13 @@
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.1.0" }
-spring-boot = { id = "org.springframework.boot", version = "3.4.0" }
-spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.6" }
+spring-boot = { id = "org.springframework.boot", version = "3.4.1" }
+spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7" }
 kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version = "2.1.0" }
 kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version = "2.1.0" }
-flyway = { id = "org.flywaydb.flyway", version = "11.0.1" }
+flyway = { id = "org.flywaydb.flyway", version = "11.1.0" }
 
 [libraries]
 springdoc-openapi-starter-mvc = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.7.0" }
 jackson-datatype-jsr310 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version = "2.18.2" }
 kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version = "5.9.1" }
-flyway-database-postgresql = { group = "org.flywaydb", name = "flyway-database-postgresql", version = "11.0.1" }
+flyway-database-postgresql = { group = "org.flywaydb", name = "flyway-database-postgresql", version = "11.1.0" }
