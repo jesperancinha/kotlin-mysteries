@@ -25,7 +25,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation(libs.jackson.datatype.jsr310)
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.18.2+")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.18.3+")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.5")
     implementation("org.flywaydb:flyway-core")
