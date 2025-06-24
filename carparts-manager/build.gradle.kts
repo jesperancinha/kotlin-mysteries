@@ -1,6 +1,4 @@
-import org.jetbrains.kotlin.config.JvmTarget
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
 
 plugins {
     alias(libs.plugins.spring.boot)
@@ -43,7 +41,7 @@ dependencies {
 kotlin {
     compilerOptions {
         freeCompilerArgs.add("-Xjsr305=strict")
-        jvmTarget.set(JVM_11)
+        jvmTarget.set(JVM_21)
     }
 }
 
