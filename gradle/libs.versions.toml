@@ -7,7 +7,12 @@ kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version = "2.2.10" }
 flyway = { id = "org.flywaydb.flyway", version = "11.9.2" }
 
 [libraries]
-springdoc-openapi-starter-mvc = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.8.11" }
+springdoc-openapi-starter-mvc = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.8.12" }
 jackson-datatype-jsr310 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version = "2.20.0" }
+<<<<<<< HEAD
 kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version = "6.0.1" }
 flyway-database-postgresql = { group = "org.flywaydb", name = "flyway-database-postgresql", version = "11.9.2" }
+=======
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version = "6.0.2" }
+flyway-database-postgresql = { group = "org.flywaydb", name = "flyway-database-postgresql", version = "11.9.1" }
+>>>>>>> origin/main
