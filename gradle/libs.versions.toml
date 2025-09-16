@@ -1,11 +1,19 @@
+[versions]
+kotlin = "2.2.20"
+spring-boot = "3.5.5"
+spring-dependency-management = "1.1.7"
+flyway = "11.13.0"
+springdoc-openapi-starter-mvc = "2.8.13"
+kotest-assertions = "6.0.3"
+
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.2.20" }
-spring-boot = { id = "org.springframework.boot", version = "3.5.5" }
-spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7" }
-kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version = "2.2.20" }
-kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version = "2.2.20" }
-flyway = { id = "org.flywaydb.flyway", version = "11.13.0" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
+flyway = { id = "org.flywaydb.flyway", version.ref = "flyway" }
 
 [libraries]
-springdoc-openapi-starter-mvc = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version = "2.8.13" }
-kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version = "6.0.3" }
+springdoc-openapi-starter-mvc = { group = "org.springdoc", name = "springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc-openapi-starter-mvc" }
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest-assertions" }
