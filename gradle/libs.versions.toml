@@ -4,7 +4,7 @@ spring-boot = "3.5.7"
 spring-dependency-management = "1.1.7"
 flyway = "11.17.2"
 springdoc-openapi-starter-mvc = "2.8.14"
-kotest-assertions = "6.0.5"
+kotest-assertions = "6.0.7"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
