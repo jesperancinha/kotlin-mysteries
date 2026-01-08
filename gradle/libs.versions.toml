@@ -2,8 +2,13 @@
 kotlin = "2.2.21"
 spring-boot = "4.0.0"
 spring-dependency-management = "1.1.7"
+<<<<<<< HEAD
 flyway = "11.18.0"
 springdoc-openapi-starter-mvc = "3.0.0"
+=======
+flyway = "11.19.0"
+springdoc-openapi-starter-mvc = "2.8.14"
+>>>>>>> origin/main
 kotest-assertions = "6.0.7"
 
 [plugins]
