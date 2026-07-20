@@ -42,6 +42,19 @@ Kotlin.
     1.  Delegates - [carparts-use-site-targets](carparts-use-site-targets)
     2.  Delegates with Spring - [carparts-data-structures](carparts-data-structures)
 
+---
+
+## Claude
+
+Prompt claude with the following:
+
+### Run all skills
+```text
+please run skills annotations, docker, java, jee, jvm, kotlin, maven, parallel, readme, scripts, spring, spring-test on this project
+```
+
+---
+
 ## About me
 
 [![GitHub followers](https://img.shields.io/github/followers/jesperancinha.svg?label=Jesperancinha&style=for-the-badge&logo=github&color=grey "GitHub")](https://github.com/jesperancinha)
