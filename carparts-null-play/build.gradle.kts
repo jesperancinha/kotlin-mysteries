@@ -23,5 +23,5 @@ tasks.test {
 tasks.register("prepareKotlinBuildScriptModel"){}
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(25)
 }
