@@ -11,16 +11,14 @@ import java.time.Instant
 
 @SpringBootTest
 class CarPartDaoTest @Autowired constructor(
-    val carPartDao: CarPartDao
-) : ContainerTest(
-) {
+    private val carPartDao: CarPartDao
+) : ContainerTest() {
 
     @Test
     fun `should fail while creating an invalid entity`() {
         shouldThrow<TransactionSystemException> {
             carPartDao.save(
                 CarPart(
-                    id = 0,
                     name = "Bolt",
                     productionDate = Instant.now(),
                     expiryDate = Instant.now(),
@@ -35,7 +33,6 @@ class CarPartDaoTest @Autowired constructor(
     fun `should create a valid entity`() {
         carPartDao.save(
             CarPart(
-                id = 0,
                 name = "Bolt",
                 productionDate = Instant.now(),
                 expiryDate = Instant.now(),

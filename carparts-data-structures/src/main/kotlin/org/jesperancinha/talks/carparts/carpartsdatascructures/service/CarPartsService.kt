@@ -11,7 +11,7 @@ import kotlin.reflect.KProperty
 
 @Service
 class CarPartsService(
-    var carPartDao: CarPartDao,
+    val carPartDao: CarPartDao,
 ) {
     @Transactional
     fun createCarPart(carPartDto: CarPartDto) = carPartDao.save(carPartDto.toEntity()).toDto()

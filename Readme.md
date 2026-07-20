@@ -7,9 +7,9 @@
 
 [![kotlin-mysteries Build](https://github.com/jesperancinha/kotlin-mysteries/actions/workflows/kotlin-mysteries.yml/badge.svg)](https://github.com/jesperancinha/kotlin-mysteries/actions/workflows/kotlin-mysteries.yml)
 
-[![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/kotlin-mysteries.svg)](#)
-[![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/kotlin-mysteries.svg)](#)
-[![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/kotlin-mysteries.svg)](#)
+![GitHub language count](https://img.shields.io/github/languages/count/jesperancinha/kotlin-mysteries.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/jesperancinha/kotlin-mysteries.svg)
+![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/kotlin-mysteries.svg)
 
 ## Introduction
 

@@ -1,7 +1,6 @@
 package org.jesperancinha.talks.carparts.carpartsdatascructures.service
 
 import io.kotest.assertions.throwables.shouldThrow
-import jakarta.validation.ConstraintViolationException
 import org.jesperancinha.talks.carparts.carpartsdatascructures.dto.CarPartDto
 import org.jesperancinha.talks.carparts.carpartsmanager.ContainerTest
 import org.junit.jupiter.api.Test
@@ -14,7 +13,7 @@ import java.math.BigDecimal
 import java.time.Instant
 
 @SpringBootTest
-class CarPartsServiceTest @Autowired constructor(val carPartsService: CarPartsService) : ContainerTest() {
+class CarPartsServiceTest @Autowired constructor(private val carPartsService: CarPartsService) : ContainerTest() {
     @Test
     fun `should fail while creating an invalid entity`() {
         shouldThrow<TransactionSystemException> {

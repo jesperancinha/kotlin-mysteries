@@ -5,10 +5,9 @@ import org.jesperancinha.talks.carparts.carpartsmanager.ContainerTest
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 
-class DomainTest : ContainerTest() {
-
-    @Autowired
-    private lateinit var carPartDao: CarPartDao
+class DomainTest @Autowired constructor(
+    private val carPartDao: CarPartDao,
+) : ContainerTest() {
 
     @Test
     fun `should mysteriously get a list with a car part with a name null`() {

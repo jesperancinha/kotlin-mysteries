@@ -6,16 +6,18 @@ clean:
 	if [ -d build ]; then rm -r build; fi
 list:
 	./gradlew -q projects
+test:
+	./gradlew test
 wrap:
 	gradle wrapper
 build: clean
 	gradle build -i
 dcup:
-	docker-compose up -d
+	docker compose up -d
 dcup-action:
-	docker-compose -f docker-compose.yaml up -d
+	docker compose -f docker-compose.yaml up -d
 dcd:
-	docker-compose down
+	docker compose down
 upgrade-gradle: upgrade-system upgrade-sdk-man upgrade
 upgrade-system:
 	sudo apt upgrade
@@ -38,7 +40,7 @@ upgrade:
 	export CURRENT=$(shell pwd); \
 	gradle wrapper --gradle-version $(GRADLE_VERSION);
 deps-plugins-update:
-	curl -sL https://raw.githubusercontent.com/jesperancinha/project-signer/master/pluginUpdatesOne.sh | bash -s -- $(PARAMS)
+	curl -sL https://rgradle wrapperaw.githubusercontent.com/jesperancinha/project-signer/master/pluginUpdatesOne.sh | bash -s -- $(PARAMS)
 deps-java-update:
 	curl -sL https://raw.githubusercontent.com/jesperancinha/project-signer/master/javaUpdatesOne.sh | bash
 deps-gradle-update:

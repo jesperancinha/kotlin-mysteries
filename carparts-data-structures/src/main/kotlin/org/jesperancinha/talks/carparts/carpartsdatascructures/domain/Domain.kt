@@ -2,7 +2,10 @@ package org.jesperancinha.talks.carparts.carpartsdatascructures.domain
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import jakarta.persistence.SequenceGenerator
 import jakarta.persistence.Table
 import jakarta.validation.constraints.Min
 import jakarta.validation.constraints.NotNull
@@ -16,7 +19,9 @@ import java.time.Instant
 @Entity
 data class CarPart(
     @Id
-    val id: Long,
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "carPartsSequenceGenerator")
+    @SequenceGenerator(name = "carPartsSequenceGenerator", sequenceName = "car_parts_id_sequence", allocationSize = 1)
+    val id: Long = 0,
     @Column
     @field:NotNull
     @field:Size(min=3, max=20)
